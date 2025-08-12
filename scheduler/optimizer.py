@@ -9,6 +9,7 @@ def parse_time(date_str, time_str):
 def schedule_employees(employees, shifts, db_path):
     model = cp_model.CpModel()
     assignments = {}
+    
 
     # Precompute shift durations in hours
     duration_hours_map = {}
